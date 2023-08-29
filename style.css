@@ -1,0 +1,66 @@
+:root {
+  color-scheme: dark;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4em;
+}
+
+body {
+  font-family: "Inter", Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  justify-content: center;
+  gap: 3em;
+  background-color: #000812;
+  text-align: center;
+}
+
+.name {
+  background-image: linear-gradient(
+    to right,
+    rgb(183, 82, 82),
+    rgb(176, 64, 120)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #0000;
+}
+
+rt {
+  /* font-size: 0.5em; */
+  /* letter-spacing: 0.2em; */
+  opacity: 0.2;
+  text-align: right;
+  font-weight: normal;
+}
+
+#pronounciation {
+  cursor: pointer;
+}
+
+#time {
+  background-color: #000;
+  padding: 0.4em;
+  border-radius: 0.3em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  margin: 0.5em;
+}
+
+.social-button {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 1em;
+  display: flex;
+  border-radius: 2em;
+  font-weight: bold;
+  align-items: center;
+  gap: 0.5rem;
+}
