@@ -43,9 +43,10 @@ rt {
 }
 
 #time {
-  background-color: #000;
-  padding: 0.4em;
-  border-radius: 0.3em;
+  /* background-color: #fff;
+  color: #000; */
+  /* padding: 0.2em; */
+  /* border-radius: 0.3em; */
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -63,4 +64,12 @@ p {
   font-weight: bold;
   align-items: center;
   gap: 0.5rem;
+}
+
+#timeActivity {
+  font-weight: bold;
+}
+
+.js-on {
+  display: none;
 }

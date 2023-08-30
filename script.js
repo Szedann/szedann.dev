@@ -8,8 +8,24 @@ document.getElementById("pronounciation").onclick = () => audio.play()
 const timeElement = document.getElementById("time")
 
 const updateTime = () => {
-    timeElement.innerText = new Date().toLocaleTimeString(navigator.language, { timeZone: "Europe/Warsaw", timeStyle: "short" })
+    const now = new Date()
+    const timeZone = "Europe/Warsaw"
+    timeElement.innerText = now.toLocaleTimeString(navigator.language, { timeZone, timeStyle: "short" })
+    const dayText = "I'm probably awake! ☀️"
+    const nightText = "I'm probably sleeping. 🛏️"
+    const hour = (now.getUTCHours() - now.getTimezoneOffset() / 60) % 24
+    const isDay = (hour >= 8 && hour < 23)
+    const element = document.getElementById("timeActivity")
+    element.innerText = isDay
+        ? dayText
+        : nightText
+    element.className = isDay ? "day" : "night"
 }
 
 updateTime()
 setInterval(updateTime, 10000)
+
+let jsOnElement
+while (jsOnElement = document.querySelector(".js-on")) {
+    jsOnElement.classList.remove("js-on")
+}
