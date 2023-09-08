@@ -2,8 +2,7 @@ const audio = new Audio("./media/Szedann.mp3")
 
 document.body.appendChild(audio)
 
-document.getElementById("pronounciation").onclick = () => audio.play()
-
+document.getElementById("pronunciation").onclick = () => audio.play()
 
 const timeElement = document.getElementById("time")
 
